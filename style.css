@@ -1,0 +1,134 @@
+/* General Properties */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: pink;
+}
+
+.hide {
+  display: none;
+}
+
+/* Start of the Game */
+.start-game,
+.next-level,
+.lose-game,
+.won-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  /*Center text vertically on page*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instructions {
+  margin-right: 1em;
+}
+
+.start-game h3 {
+  margin-top: 0;
+}
+
+.grid-tier-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.tier-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Start button*/
+button {
+  padding: 1em 2em;
+  background-color: #a7d0f2;
+  color: navy;
+  border: navy 2px solid;
+
+  transition: all 1s ease 0s;
+}
+
+#start-btn:hover,
+#next-btn:hover {
+  color: green;
+  border: green 2px solid;
+}
+
+/*Points and Time Parameters*/
+
+.parameters {
+  display: flex;
+  text-align: center;
+}
+
+.parameters-time,
+.parameters-points {
+  margin: 0 4em;
+}
+
+/* Gameboard */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  height: 480px;
+  border: white solid 10px;
+  border-radius: 10px;
+}
+
+.grid div,
+.instructions {
+  width: 30px;
+  height: 30px;
+}
+
+.square-dot {
+  background-color: yellow;
+}
+
+.square-background {
+  background-color: burlywood;
+}
+
+.square-tier1 {
+  background-color: white;
+  border: 10px solid cadetblue;
+  box-sizing: border-box;
+}
+
+.square-tier2 {
+  background-color: white;
+  border: 10px solid rosybrown;
+  box-sizing: border-box;
+}
+
+.square-tier3 {
+  background-color: white;
+  border: 10px solid red;
+  box-sizing: border-box;
+}
+
+.square-tier4 {
+  background-color: white;
+  border: 10px solid purple;
+  box-sizing: border-box;
+}
+
+.square-used {
+  background-color: cadetblue;
+}

@@ -1,0 +1,336 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry-Dot</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" href="yellow-dot.png" type="image/gif">
+</head>
+<body class="">
+    <div id="title">
+        <div class="start-game" id="start-game-div">
+            <h1>HUNGRY-DOT</h1>
+            <h3>How to Play</h2>
+            <p>Eat the dots so that <strong>500 points</strong> are reached before the time runs out!</p>
+            <h3>Points</h3>
+            <div class="grid-tier-info">
+                <div class="tier-info">
+                    <div class="square-tier1 instructions"></div>
+                    <p>10 points</p>
+                </div>
+                <div class="tier-info">
+                    <div class="square-tier2 instructions"></div>
+                    <p>20 points</p>
+                </div>
+                <div class="tier-info">
+                    <div class="square-tier3 instructions"></div>
+                    <p>30 points</p>
+                </div>
+                <div class="tier-info">
+                    <div class="square-tier4 instructions"></div>
+                    <p>40 points</p>
+                </div>
+            </div>
+            <h2>LEVEL 1 - EASY</h2>
+            <button id="start-btn">START</button>
+        </div>
+        <div class="hide" id="next-level-div">
+            <h1>HUNGRY-DOT</h1>
+            <h2 id="level"></h2>
+            <button id="next-btn">START</button>
+        </div>
+        <div class="hide" id="lose-game-div">
+            <h1>HUNGRY-DOT</h1>
+            <h2>Sorry, you lose :(</h2>
+            <button id="try-again-btn">TRY AGAIN</button>
+        </div>
+        <div class="hide" id="won-game-div">
+            <h1>Congratulations, you won HUNGRY-DOT!!</h1>
+            <button id="restart-btn">RESTART</button>
+        </div>
+    </div>
+    
+    <div class="hide" id="game-container">
+
+        <div class="container">
+
+            <head>
+                <h2>Hungry-Dot</h2>
+                <div class="parameters">
+                    <div class="parameters-time">
+                        <h3>Time </h3>
+                        <h3 id="set-time"></h3>
+                    </div>
+                    <div class="parameters-points">
+                        <h3>Points </h3>
+                        <h3 id="points">0</h3>
+                    </div>
+                </div>
+            </head>
+
+            <div class="grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        </div>
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
