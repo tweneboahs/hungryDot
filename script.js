@@ -98,50 +98,6 @@ nextBtn.addEventListener("click", gameSetup);
 tryAgainBtn.addEventListener("click", gameSetup);
 restartBtn.addEventListener("click", gameSetup);
 
-/*startBtn.addEventListener("click", () => {
-    
-    gameContainer.classList.remove("hide");
-    titleContainer.classList.add("hide");
-
-    addGameBoard(t)
-    let timeNow = times[t];
-    setTime.innerHTML = timeNow;
-    let idchangeTime = setInterval(changeTime, 1000);
-
-    
-    function changeTime() {
-        if(pointScore>=100){
-            if (t < times.length){
-                clearInterval(idchangeTime)
-                gameContainer.classList.add("hide");
-                titleContainer.classList.remove("hide");
-
-                gameLevel.innerHTML = levels[t-1];
-                pointScore = 0;
-                points.innerHTML = 0;
-                removeGameBoard();
-            } else {
-                // use this in case the player wins the game
-            }
-                
-        } else if( timeNow < 0){
-            clearInterval(idchangeTime)
-            gameContainer.classList.add("hide");
-            titleContainer.classList.remove("hide");
-            gameLevel.innerHTML = "You LOSE :(";
-            pointScore = 0;
-            //points.innerHTML = 0;
-            t=0;
-        } else{
-            setTime.innerHTML = timeNow;
-            timeNow -= 1;
-        }
-    }
-    
-    
-    t++;
-})*/
-
 function hideAllDivs(){
     //hide the gameboard container
     gameContainer.classList.add("hide");
