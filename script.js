@@ -230,7 +230,7 @@ Here are the keycodes for the arrows
     right = 39
     down = 40 
 */
-let k=0;
+let k=0; 
 
 document.addEventListener('keydown', (e) =>{
 
