@@ -22,7 +22,7 @@ const gameContainer = document.getElementById("game-container");
 
 //in order to change time and levels
 const setTime = document.getElementById('set-time');
-const times = [3000, 30, 30];
+const times = [40, 30, 20];
 const levels = ["LEVEL 2 - MEDIUM", "LEVEL 3 - HARD"];
 
 //in order to change point score
@@ -90,7 +90,7 @@ const numberForSquareColors = [
     ]
 ];
 
-
+// t= 0 in order to start the first game timer and game board
 let t=0;
 
 startBtn.addEventListener("click", gameSetup);
