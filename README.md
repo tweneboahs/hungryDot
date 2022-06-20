@@ -1,1 +1,1 @@
-[# hungryDot](https://tweneboahs.github.io/hungryDot/)
+https://tweneboahs.github.io/hungryDot/
